@@ -241,6 +241,9 @@ html{
 	justify-content: flex-end;
 	align-content: flex-end;
 }
+.footer__container {
+	padding: 2em;
+}
 main {
 	display: flex;
 	flex-direction: column;
