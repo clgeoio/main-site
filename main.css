@@ -159,7 +159,8 @@ html{
     position:relative;
     font-size:2.75rem;
     font-weight:200;
-    text-transform:lowercase
+    text-transform:lowercase;
+    margin: 1em;
 }
 .nav__item::after{
     content:'';
