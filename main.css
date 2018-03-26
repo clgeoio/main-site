@@ -237,7 +237,9 @@ html{
 	align-content: flex-end;
 }
 .footer__container {
-	padding: 2em;
+	padding: 1em;
+	background-color: #373a3c;
+        color: #fff;
 	min-height: 3em;
 }
 main {
