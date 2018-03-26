@@ -87,7 +87,7 @@ ol,ul{
     margin-bottom:1rem
 }
 a{
-    color:#fc6767;
+    color:#26C9FF;
     text-decoration:none
 }
 a,button{
@@ -179,7 +179,7 @@ html{
     transform-origin:0 50%
 }
 .nav__item--active::after{
-    background-color:#fc6767;
+    background-color:#26C9FF;
     -webkit-transform:none;
     -ms-transform:none;
     transform:none
