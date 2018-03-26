@@ -166,10 +166,9 @@ html{
     content:'';
     display:block;
     height:5px;
+    width: 100%;
     background-color:#eceeef;
     position:absolute;
-    left:1rem;
-    right:1rem;
     bottom:-5px;
     -webkit-transform:scaleX(0);
     -ms-transform:scaleX(0);
