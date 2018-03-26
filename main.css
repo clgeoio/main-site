@@ -215,12 +215,6 @@ html{
     transform:translate3d(0,0,0)
 }
 
-.container {
-	width: 90%;
-	max-width: 1800px;
-	margin: auto;
-}
-
 .header__brand {
 	font-size: 2em;
 	font-weight: 400;
