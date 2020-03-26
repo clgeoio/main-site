@@ -1,7 +1,17 @@
 import { GlobalStyles } from "../design/GlobalStyles";
-
+import styled from "styled-components";
 import Head from "next/head";
 import { Navbar } from "../design/navigation/Navbar";
+import { breakpoints } from "../design/helpers/breakpoints";
+
+const Wrapper = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+  max-width: ${breakpoints.md};
+`;
+
 const Index: React.FunctionComponent = () => {
   return (
     <div>
@@ -13,7 +23,7 @@ const Index: React.FunctionComponent = () => {
       </Head>
       <GlobalStyles />
       <Navbar title="clgeo.io" />
-      <h1>clgeio</h1>
+      <Wrapper>coming soon...</Wrapper>
     </div>
   );
 };
