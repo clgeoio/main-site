@@ -1,9 +1,9 @@
-import Link from "next/link";
+import { GlobalStyles } from "../design/GlobalStyles";
 const Index: React.FunctionComponent = () => {
   return (
     <div>
-      <div>clgeio</div>
-      <Link href="about"></Link>
+      <GlobalStyles />
+      <h1>clgeio</h1>
     </div>
   );
 };
