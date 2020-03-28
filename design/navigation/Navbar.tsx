@@ -5,7 +5,6 @@ import { greaterThanMd } from "../helpers/breakpoints";
 const Nav = styled.nav`
   height: 50px;
   width: 100%;
-  background-color: #2376ae;
   position: relative;
 `;
 
@@ -45,7 +44,7 @@ const Links = styled.div`
   display: block;
   width: 100%;
   height: 0px;
-  background-color: #333;
+  background-color: rgba(0, 0, 0, 0.8);
   transition: all 0.3s ease-in;
   overflow-y: hidden;
   top: 50px;
@@ -107,9 +106,7 @@ const Navbar: React.FunctionComponent<NavbarProps> = ({ title }) => {
         <span></span>
       </Hamburger>
       <Links id="nav-links">
-        <Link href="https://github.com/clgeoio" passHref>
-          <StyledLink>Github</StyledLink>
-        </Link>
+        <StyledLink href="https://github.com/clgeoio">Github</StyledLink>
       </Links>
     </Nav>
   );
