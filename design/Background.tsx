@@ -51,7 +51,7 @@ const Background: React.FunctionComponent<{ imageSrc: string }> = ({
 
   return (
     <StyledBackground
-      preImageSrc={`${imageSrc}.pre.jpg`}
+      preImageSrc={`pre-${imageSrc}`}
       imageSrc={backgroundImage}
     />
   );

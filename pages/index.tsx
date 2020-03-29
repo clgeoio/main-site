@@ -26,7 +26,7 @@ const Index: React.FunctionComponent = () => {
         <title>clgeo.io</title>
       </Head>
       <GlobalStyles />
-      <Background imageSrc={"/static/images/bg-mountain.jpg"} />
+      <Background imageSrc={"/static/images/bg-mountain.webp"} />
       <Wrapper>
         <Navbar title="clgeo.io" />
         coming soon...
