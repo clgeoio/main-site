@@ -1,5 +1,6 @@
 import styled, { css } from "styled-components";
 import React, { useEffect, useState } from "react";
+
 const StyledBackground = styled.div<{
   preImageSrc: string;
   imageSrc: string;
@@ -32,13 +33,13 @@ function loadImage(src: string): Promise<string> {
   return new Promise((resolve, reject) => {
     const image = new Image();
     image.onload = () => resolve(src);
-    image.onerror = err => reject(err);
+    image.onerror = (err) => reject(err);
     image.src = src;
   });
 }
 
 const Background: React.FunctionComponent<{ imageSrc: string }> = ({
-  imageSrc
+  imageSrc,
 }) => {
   const [backgroundImage, setBackgroundImage] = useState("");
   useEffect(() => {
