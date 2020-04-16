@@ -38,13 +38,13 @@ function loadImage(src: string): Promise<string> {
   });
 }
 
-const Background: React.FunctionComponent<{ imageSrc: string }> = ({
-  imageSrc,
-}) => {
+const Background: React.FunctionComponent<{
+  imageSrc: { path: string; filename: string };
+}> = ({ imageSrc }) => {
   const [backgroundImage, setBackgroundImage] = useState("");
   useEffect(() => {
     const load = async () => {
-      const src = await loadImage(imageSrc);
+      const src = await loadImage(`${imageSrc.path}${imageSrc.filename}`);
       setBackgroundImage(src);
     };
     load();
@@ -52,7 +52,7 @@ const Background: React.FunctionComponent<{ imageSrc: string }> = ({
 
   return (
     <StyledBackground
-      preImageSrc={`pre-${imageSrc}`}
+      preImageSrc={`${imageSrc.path}pre-${imageSrc.filename}`}
       imageSrc={backgroundImage}
     />
   );

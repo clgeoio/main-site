@@ -16,6 +16,11 @@ const Wrapper = styled.div`
   align-items: center;
 `;
 
+const imageSrc = {
+  path: "/static/images/",
+  filename: "bg.jpg",
+};
+
 const Index: React.FunctionComponent = () => {
   return (
     <Fragment>
@@ -26,7 +31,7 @@ const Index: React.FunctionComponent = () => {
         <title>clgeo.io</title>
       </Head>
       <GlobalStyles />
-      <Background imageSrc={"/static/images/bg.jpg"} />
+      <Background imageSrc={imageSrc} />
       <Wrapper>
         <Navbar title="clgeo.io" />
         coming soon...
