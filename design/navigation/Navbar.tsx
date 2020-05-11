@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import Link from "next/link";
 import { greaterThanMd } from "../helpers/breakpoints";
 
 const Nav = styled.nav`
@@ -44,7 +43,7 @@ const Links = styled.div`
   display: block;
   width: 100%;
   height: 0px;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.9);
   transition: all 0.3s ease-in;
   overflow-y: hidden;
   top: 50px;
