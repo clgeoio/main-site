@@ -95,7 +95,7 @@ const Navbar: React.FunctionComponent<NavbarProps> = ({ title }) => {
     <Nav>
       <Header>
         <Title>
-          <Link prefetch passHref href="/">
+          <Link passHref href="/">
             <StyledLink>{title}</StyledLink>
           </Link>
         </Title>

@@ -1,4 +1,15 @@
 import { createGlobalStyle } from "styled-components";
+
+//     --bg-color: #1d1f21;
+//     --bg-color-semitransparent: rgba(33, 33, 33, 0.75);
+//     --bg-color-secondary: #252526;
+//     --text-color: #ffffff;
+//     --text-color-secondary: #818a91;
+//     --border-color: #2d2d2d;
+//     --brand-color-primary: #ff5277;
+//     --brand-color-primary-offset: #ff2957;
+//     --brand-color-secondary: #43a9a3;
+
 const GlobalStyles = createGlobalStyle`
   body {
     margin: 0;
