@@ -16,6 +16,15 @@ const Wrapper = styled.div`
   align-items: center;
 `;
 
+const ChildWrapper = styled.div`
+  margin-top: 20px;
+  width: 90%;
+  background-color: #eee;
+  opacity: 0.9;
+  padding: 10px;
+  border-radius: 4px;
+`;
+
 const imageSrc = {
   path: "/static/images/",
   filename: "bg.jpg",
@@ -34,7 +43,7 @@ const Root: React.FunctionComponent = ({ children }) => {
       <Background imageSrc={imageSrc} />
       <Wrapper>
         <Navbar title="clgeo.io" />
-        {children}
+        <ChildWrapper>{children}</ChildWrapper>
       </Wrapper>
     </Fragment>
   );

@@ -47,8 +47,9 @@ const Links = styled.div`
   background-color: rgba(0, 0, 0, 0.9);
   transition: all 0.3s ease-in;
   overflow-y: hidden;
-  top: 50px;
+  top: 60px;
   left: 0px;
+  z-index: 2;
 
   ${greaterThanMd`
     position: initial;

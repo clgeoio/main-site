@@ -1,26 +1,11 @@
 import { GetServerSideProps } from "next";
-import Markdown from "react-markdown";
 import { Root } from "../../design/Root";
+import { PostProps, Post } from "../../design/post/Post";
 
-interface PostProps {
-  title: string;
-  description: string;
-  author: string;
-  image: string;
-  categories: string[];
-  date: string;
-  draft: boolean;
-  dir: string;
-  base: string;
-  ext: string;
-  bodyContent: string;
-  bodyHtml: string;
-}
-
-const Post: React.FunctionComponent<PostProps> = ({ bodyContent }) => {
+const PostSlug: React.FunctionComponent<PostProps> = (props) => {
   return (
     <Root>
-      <Markdown source={bodyContent} />
+      <Post {...props} />
     </Root>
   );
 };
@@ -35,4 +20,4 @@ export const getServerSideProps: GetServerSideProps = async (context) => {
   };
 };
 
-export default Post;
+export default PostSlug;
