@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { greaterThanMd } from "../helpers/breakpoints";
+import Link from "next/link";
 
 const Nav = styled.nav`
   height: 50px;
@@ -96,7 +97,11 @@ const Navbar: React.FunctionComponent<NavbarProps> = ({ title }) => {
   return (
     <Nav>
       <Header>
-        <Title>{title}</Title>
+        <Title>
+          <Link prefetch passHref href="/">
+            <StyledLink>{title}</StyledLink>
+          </Link>
+        </Title>
       </Header>
       <HiddenCheck id="nav-check" type="checkbox" />
       <Hamburger htmlFor="nav-check">
