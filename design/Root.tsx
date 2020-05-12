@@ -5,7 +5,6 @@ import Head from "next/head";
 import { Navbar } from "../design/navigation/Navbar";
 import { breakpoints } from "../design/helpers/breakpoints";
 import { Fragment } from "react";
-import { Background } from "../design/Background";
 
 const Wrapper = styled.div`
   display: flex;
@@ -25,11 +24,6 @@ const ChildWrapper = styled.div`
   border-radius: 4px;
 `;
 
-const imageSrc = {
-  path: "/static/images/",
-  filename: "bg.jpg",
-};
-
 const Root: React.FunctionComponent = ({ children }) => {
   return (
     <Fragment>
@@ -40,7 +34,6 @@ const Root: React.FunctionComponent = ({ children }) => {
         <title>clgeo.io</title>
       </Head>
       <GlobalStyles />
-      <Background imageSrc={imageSrc} />
       <Wrapper>
         <Navbar title="clgeo.io" />
         <ChildWrapper>{children}</ChildWrapper>

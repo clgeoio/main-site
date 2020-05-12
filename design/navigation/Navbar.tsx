@@ -44,7 +44,7 @@ const Links = styled.div`
   display: block;
   width: 100%;
   height: 0px;
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: #1d1f21;
   transition: all 0.3s ease-in;
   overflow-y: hidden;
   top: 60px;
@@ -84,10 +84,6 @@ const StyledLink = styled.a`
     display: inline-block;
     width: auto;
     `}
-
-  &:hover {
-    background-color: rgba(0, 0, 0, 0.3);
-  }
 `;
 
 interface NavbarProps {
