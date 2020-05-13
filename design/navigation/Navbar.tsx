@@ -12,11 +12,15 @@ const Header = styled.div`
   display: inline;
 `;
 
-const Title = styled.h2`
+const Title = styled.h1`
   display: inline-block;
-  font-size: 22px;
   color: #fff;
-  padding: 10px 10px 10px 10px;
+  font-size: 2.6rem;
+  margin: 15px;
+`;
+
+const TitleLink = styled.a`
+  text-decoration: none;
 `;
 
 const Hamburger = styled.label`
@@ -94,11 +98,11 @@ const Navbar: React.FunctionComponent<NavbarProps> = ({ title }) => {
   return (
     <Nav>
       <Header>
-        <Title>
-          <Link passHref href="/">
-            <StyledLink>{title}</StyledLink>
-          </Link>
-        </Title>
+        <Link passHref href="/">
+          <TitleLink>
+            <Title>{title}</Title>
+          </TitleLink>
+        </Link>
       </Header>
       <HiddenCheck id="nav-check" type="checkbox" />
       <Hamburger htmlFor="nav-check">
