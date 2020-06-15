@@ -42,6 +42,7 @@ const PostListing = () => {
                 </Heading>
                 <Flex marginTop={5}>
                   <Text>{post.author}</Text>
+                  <Text marginLeft={3}>~</Text>
                   <Text marginLeft={3}>
                     {date.getFullYear()}-{`${date.getMonth()}`.padStart(2, "0")}
                     -{`${date.getDay()}`.padStart(2, "0")}
