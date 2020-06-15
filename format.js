@@ -6,8 +6,8 @@ const result = Object.keys(summary.fileMap)
     return summary.fileMap[key];
   })
   .sort((a, b) => {
-    if (a.date < b.date) return -1;
-    if (a.date > b.data) return 1;
+    if (a.date < b.date) return 1;
+    if (a.date > b.data) return -1;
     return 0;
   });
 

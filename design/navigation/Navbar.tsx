@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Box, Heading, Flex, Text } from "@chakra-ui/core";
+import { Box, Heading, Flex, Text, Link as LinkBox } from "@chakra-ui/core";
 import Link from "next/link";
 
 const MenuItems = ({ children }) => (
@@ -29,7 +29,9 @@ const Navbar: React.FunctionComponent<NavbarProps> = ({ title }) => {
       <Flex flexGrow={1} justifyContent="space-between">
         <Flex align="center" mr={5}>
           <Heading as="h1" size="lg">
-            <Link href="/">{title}</Link>
+            <Link href="/">
+              <LinkBox>{title}</LinkBox>
+            </Link>
           </Heading>
         </Flex>
 
@@ -54,7 +56,7 @@ const Navbar: React.FunctionComponent<NavbarProps> = ({ title }) => {
           flexGrow={1}
         >
           <MenuItems>
-            <Link href="https://github.com/clgeoio">Github</Link>
+            <LinkBox href="https://github.com/clgeoio">Github</LinkBox>
           </MenuItems>
         </Box>
       </Flex>
