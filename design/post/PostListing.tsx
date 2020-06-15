@@ -25,8 +25,10 @@ const PostListing = () => {
         Latest Posts
       </Heading>
       <Stack spacing={5}>
-        {(summary as PostSummary[]).map(
-          (post) =>
+        {(summary as PostSummary[]).map((post) => {
+          const date = new Date(post.date);
+
+          return (
             !post.draft && (
               <Box key={post.title} padding={5} shadow="md" borderWidth="1px">
                 <Heading as="h3" size="lg">
@@ -41,12 +43,14 @@ const PostListing = () => {
                 <Flex marginTop={5}>
                   <Text>{post.author}</Text>
                   <Text marginLeft={3}>
-                    {new Date(post.date).toLocaleDateString()}
+                    {date.getFullYear()}-{`${date.getMonth()}`.padStart(2, "0")}
+                    -{`${date.getDay()}`.padStart(2, "0")}
                   </Text>
                 </Flex>
               </Box>
             )
-        )}
+          );
+        })}
       </Stack>
     </Box>
   );
