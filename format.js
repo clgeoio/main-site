@@ -5,11 +5,7 @@ const result = Object.keys(summary.fileMap)
   .map(function (key) {
     return summary.fileMap[key];
   })
-  .sort((a, b) => {
-    if (a.date < b.date) return 1;
-    if (a.date > b.data) return -1;
-    return 0;
-  });
+  .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
 
 fs.writeFile("output/summary.json", JSON.stringify(result), (err) => {
   if (err) throw err;
