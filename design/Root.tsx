@@ -9,10 +9,10 @@ const Root: React.FunctionComponent = ({ children }) => {
       <Head>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="description" content="clgeo.io software engineer" />
-        <title>clgeo.io</title>
+        <meta name="description" content="clg software engineer" />
+        <title>clg</title>
       </Head>
-      <Navbar title="clgeo.io" />
+      <Navbar title="clg" />
       <Box margin={5}>{children}</Box>
     </Fragment>
   );
